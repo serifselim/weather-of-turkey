@@ -1,0 +1,33 @@
+body {
+  background-color: #212529;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+svg path {
+  cursor: pointer;
+}
+
+svg path:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 578px) {
+  .btn {
+    width: 100%;
+  }
+
+  .turkey-map {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header select {
+    margin-top: 20px;
+  }
+}
