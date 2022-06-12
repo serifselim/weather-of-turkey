@@ -1,5 +1,7 @@
 # Hava Durumu Uygulaması
 
+![picture](https://media.discordapp.net/attachments/898538022969147394/985445415459651594/unknown.png?width=1198&height=653)
+
 ## Projeyi Çalıştırma Adımları:
 
 ### - Projeyi kendi bilgisayarımıza kopyalamak için
