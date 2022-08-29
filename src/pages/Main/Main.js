@@ -3,19 +3,19 @@ import React from 'react';
 import { Map, Show } from '../../components';
 import { Header } from '../../components';
 // Bootstrap
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Main = () => {
     return (
         <>
             <Header />
             <Container>
-                <div className='d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 text-light'>
-                    <div className='turkey-map'>
+                <Row className='d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 text-light'>
+                    <Col className='turkey-map mx-auto d-flex justify-content-center'>
                         <Map />
-                    </div>
+                    </Col>
                     <Show />
-                </div>
+                </Row>
             </Container>
         </>
     );
