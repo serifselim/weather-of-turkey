@@ -22,6 +22,7 @@ const Map = () => {
                         population={city.population}
                         currentCity={currentCity}
                         handleClick={handleClick}
+                        
                     />
                 ))
             }

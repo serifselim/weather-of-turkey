@@ -27,7 +27,15 @@ svg path:hover {
     flex-direction: column;
   }
 
+  .cities{
+    width: 100%;
+  }
+
   .header select {
     margin-top: 20px;
+  }
+  
+  .weekly{
+    flex-direction: column 1!important;
   }
 }

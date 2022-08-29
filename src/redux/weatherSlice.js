@@ -24,14 +24,15 @@ export const fetchWeatherData = createAsyncThunk(
         });
 
         const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/onecall?lat=${wantedCity.lat}&lon=${wantedCity.lon}&appid=${REACT_APP_API_KEY}&exclude=minutely&units=metric`
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${wantedCity.lat}&lon=${wantedCity.lon}&appid=${REACT_APP_API_KEY}&exclude=minutely,hourly&units=metric`,
         );
 
-        const { current } = response.data;
+        const { daily } = response.data;
 
         return {
             city: wantedCity.id,
-            current,
+            daily,
+            wantedCity
         };
     }
 );
@@ -53,6 +54,8 @@ const weatherSlice = createSlice({
         builder.addCase(fetchWeatherData.fulfilled, (state, action) => {
             state.currentCity = action.payload.city;
             state.weatherData = action.payload;
+            console.log(state.weatherData)
+            console.log(action.payload)
             state.isFetch = true;
         });
     },

@@ -7,7 +7,7 @@ const Main = () => {
         <>
             <Header />
             <div className='container'>
-                <div className='d-flex flex-column align-items-center justify-content-center mt-5 text-light'>
+                <div className='d-flex flex-column align-items-center justify-content-center mt-0 mt-md-5 text-light'>
                     <div className='turkey-map'>
                         <Map />
                     </div>
