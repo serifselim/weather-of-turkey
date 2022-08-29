@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import City from './City.js'
+import City from './childComponents/City.js'
 import { fetchWeatherData } from '../../redux/weatherSlice.js'
 
 const Map = () => {
