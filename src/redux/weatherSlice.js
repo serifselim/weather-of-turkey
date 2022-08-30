@@ -37,7 +37,6 @@ export const fetchWeatherData = createAsyncThunk(
     }
 );
 
-
 const weatherSlice = createSlice({
     name: 'counter',
     initialState,
